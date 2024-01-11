@@ -2,6 +2,7 @@ package Stacks_And_Queues.Lab;
 
 import java.util.ArrayDeque;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class MatchingBrackets {
     public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class MatchingBrackets {
 
         String expression = scanner.nextLine();
 
-        ArrayDeque<Integer> openIndexes= new ArrayDeque<>();
+        Stack<Integer> openIndexes= new Stack<>();
 
         for (int i = 0; i < expression.length(); i++) {
             char currentSymbol = expression.charAt(i);
